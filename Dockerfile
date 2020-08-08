@@ -1,2 +1,3 @@
-FROM dockersamples/static-site
-ENV AUTHOR="Futoshi Taga"
+FROM nginx:latest
+
+COPY default.conf /etc/nginx/conf.d/default.conf
